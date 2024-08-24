@@ -25,6 +25,7 @@ import androidx.compose.ui.unit.sp
 import com.timrashard.calculator_bootcamp.presentation.CalculatorGrid
 import com.timrashard.calculator_bootcamp.ui.theme.Calculator_BootcampTheme
 import com.timrashard.calculator_bootcamp.ui.theme.Color1
+import com.timrashard.calculator_bootcamp.ui.theme.Color2
 import com.timrashard.calculator_bootcamp.ui.theme.Color6
 
 class MainActivity : ComponentActivity() {
@@ -42,7 +43,7 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun CalculatorApp(){
     Scaffold(
-        containerColor = Color1
+        containerColor = Color2
     ) { paddingValues ->
 
         val configuration = LocalConfiguration.current

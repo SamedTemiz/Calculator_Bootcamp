@@ -10,7 +10,7 @@ object CalculatorOperations {
         "7", "8", "9", "x",
         "4", "5", "6", "-",
         "1", "2", "3", "+",
-        ".", "0", ",", "="
+        "C", "0", ".", "="
     )
 
     // Renkler için
@@ -27,6 +27,10 @@ object CalculatorOperations {
                 "AC" -> {
                     equation.value = ""
                     result.value = "0"
+                }
+                "C" -> {
+                    equation.value = equationText.dropLast(1)
+                    result.value = result.value?.dropLast(1)
                 }
                 "=" -> {
                     val calculatedResult = calculateResult(equationText)
